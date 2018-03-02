@@ -1,0 +1,43 @@
+TESTHOST=`pwd`;export TESTHOST;
+HOST=10.128.16.88; export HOST;
+PORT=9090; export PORT;
+USERNAME=u1; export USERNAME;
+DOMAIN=pab.com; export DOMAIN; 
+PASSWORD=p; export PASSWORD; 
+ADDRESSBOOKNAME=testn; export ADDRESSBOOKNAME;
+PARSERFILE=$TESTHOST/src/cp/cpParser.txt; export PARSERFILE;
+PABVCARDDIR=$TESTHOST/pabdir; export PABVCARDDIR;
+SEARCHATTRIBUTE=cpabEntryName; export SEARCHATTRIBUTE;
+SEARCHATTRIBUTEVALUE=First; export SEARCHATTRIBUTEVALUE;
+DELETEATTRIBUTE=cpabEntryName; export DELETEATTRIBUTE;
+DELETEATTRIBUTEVALUE=a; export DELETEATTRIBUTEVALUE;
+OPTION=2;export OPTION;
+CONTACTDIR=$TESTHOST/pabdir; export CONTACTDIR;
+
+#############################################################
+#IFS Config#
+#############################################################
+
+DOMAINS=( Mobile.com Mobile2.com ); export DOMAINS;
+USERS=( u1 u2 ); export USERS;
+
+DOMAINCOUNT=${#DOMAINS[@]};export DOMAINCOUNT;
+USERCOUNT=cnt=${#USERS[@]};export USERCOUNT;
+
+LOCIP=10.128.16.88; export LOCIP;
+LOCPORT=389;
+
+
+IFSHOST=10.128.16.88; export IFSPORT;
+IFSPASSWORD="admin"; export IFSPASSWORD;
+IFSPORT=89;
+IFSHOSTFILE="/etc/hosts"; export IFSHOSTFILE;
+
+FSHOSTNAME=10.128.16.88; export FSHOSTNAME;
+FSPORT=6212; export FSPORT;
+FSPASSWORD=password; export FSPASSWORD;
+
+FILENAME="a.txt";
+RESOURCEPATH="/u1";
+PROTOCOL="http";
+
